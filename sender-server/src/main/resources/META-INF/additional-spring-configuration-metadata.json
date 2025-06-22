@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "api.receiver.host",
+      "type": "java.lang.String",
+      "description": "Test Receive API."
+    },
+    {
+      "name": "api.receiver.port",
+      "type": "java.lang.String",
+      "description": "Test Receive API."
+    }
+  ] }
