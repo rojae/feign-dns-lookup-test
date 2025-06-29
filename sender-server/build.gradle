@@ -42,3 +42,15 @@ dependencyManagement {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += [
+            '--add-exports', 'java.base/sun.net=ALL-UNNAMED'
+    ]
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += [
+            '--add-exports', 'java.base/sun.net=ALL-UNNAMED'
+    ]
+}
