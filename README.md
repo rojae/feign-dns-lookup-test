@@ -98,13 +98,13 @@ sequenceDiagram
 
 ## Standard JVM `networkaddress.cache.*` Properties with Java version
 
-| Property                            | Description                                                                       | Default | Java Version Introduced | Status     | Java Proposal Reference |
-|-------------------------------------|-----------------------------------------------------------------------------------|---------|-------------------------|------------|-------------------------|
-| `networkaddress.cache.ttl`          | Positive cache TTL (seconds) for successful name resolutions. `-1` means forever. | `-1`    | JDK 1.4+                | Standard   |introduced in JDK 1.4, no JEP (java.security standard)|
-| `networkaddress.cache.negative.ttl` | Negative cache TTL (seconds) for failed name resolutions. `-1` means forever.     | `10`    | JDK 1.4+                | Standard   |introduced in JDK 1.4, no JEP (java.security standard)|
-| `networkaddress.cache.stale.ttl`    | TTL (seconds) for allowing stale (expired) cache reuse if fresh lookup fails.     | `0`     | JDK 17+                 | Standard   |
-| `sun.net.inetaddr.ttl`              | Legacy alias for positive TTL (same as `networkaddress.cache.ttl`).               | n/a     | pre-JDK 1.4             | Deprecated |
-| `sun.net.inetaddr.negative.ttl`     | Legacy alias for negative TTL (same as `networkaddress.cache.negative.ttl`).      | n/a     | pre-JDK 1.4             | Deprecated |
+| Property                            | Description                                                                       | Default | Java Version Introduced | Status     | Java Proposal Reference                                                                                                                          |
+|-------------------------------------|-----------------------------------------------------------------------------------|---------|-------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| `networkaddress.cache.ttl`          | Positive cache TTL (seconds) for successful name resolutions. `-1` means forever. | `-1`    | JDK 1.4+                | Standard   | introduced in JDK 1.4, no JEP (java.security standard)                                                                                           |
+| `networkaddress.cache.negative.ttl` | Negative cache TTL (seconds) for failed name resolutions. `-1` means forever.     | `10`    | JDK 1.4+                | Standard   | introduced in JDK 1.4, no JEP (java.security standard)                                                                                           |
+| `networkaddress.cache.stale.ttl`    | TTL (seconds) for allowing stale (expired) cache reuse if fresh lookup fails.     | `0`     | JDK 17+                 | Standard   | [Oracle-Docs Java-24](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/doc-files/net-properties.html#address-cache-heading) |
+| `sun.net.inetaddr.ttl`              | Legacy alias for positive TTL (same as `networkaddress.cache.ttl`).               | n/a     | pre-JDK 1.4             | Deprecated | no JEP                                                                                                                                           |
+| `sun.net.inetaddr.negative.ttl`     | Legacy alias for negative TTL (same as `networkaddress.cache.negative.ttl`).      | n/a     | pre-JDK 1.4             | Deprecated | no JEP                                                                                                                                           |
 
 ## Shutdown OS Cache
 
@@ -115,12 +115,16 @@ sequenceDiagram
 | **Windows** | `ipconfig /flushdns`                                                | Flush Windows DNS client cache             |
 
 ## Reference Links
+
 ### Oracle Docs
+
 - [Oracle-Docs Java-24](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/doc-files/net-properties.html#address-cache-heading)
 - [Oracle-Docs Java-17](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/doc-files/net-properties.html)
 - [Oracle-Docs Java-11](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/doc-files/net-properties.html)
 - [Oracle-Docs Java-8](https://docs.oracle.com/javase/8/docs/technotes/guides/net/properties.html)
-### Open JDK 
+
+### Open JDK
+
 - [JDK-8219993 (OpenJDK bug)](https://bugs.openjdk.org/browse/JDK-8219993)
 - [JDK-8323089 (OpenJDK bug)](https://bugs.openjdk.org/browse/JDK-8323089)
  
