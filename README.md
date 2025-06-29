@@ -128,7 +128,6 @@ sequenceDiagram
 - [JDK-8306653 (Reuse stale data to improve DNS resolver resiliency)](https://bugs.openjdk.org/browse/JDK-8306653)
 - [JDK-8219993 (OpenJDK bug)](https://bugs.openjdk.org/browse/JDK-8219993)
 - [JDK-8323089 (OpenJDK bug)](https://bugs.openjdk.org/browse/JDK-8323089)
-  https://bugs.openjdk.org/browse/JDK-8306653
 
 ### RFC
 
