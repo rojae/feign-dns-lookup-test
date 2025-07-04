@@ -1,4 +1,5 @@
 # [Test-Module] feign-dns-lookup-issue
+- https://medium.com/@jaethon96/how-is-dns-managed-in-jvm-0b1cadd08ba2
 
 # Environment
 
