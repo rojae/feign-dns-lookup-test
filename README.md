@@ -1,5 +1,7 @@
 # [Test-Module] feign-dns-lookup-issue
-- https://medium.com/@jaethon96/how-is-dns-managed-in-jvm-0b1cadd08ba2
+## Blog Post
+- [ENG] (https://medium.com/@jaethon96/how-is-dns-managed-in-jvm-0b1cadd08ba2)
+- [KOR] (https://rojae.github.io/posts/jvm-dns-caching-meets-connection-pools/)
 
 # Environment
 
