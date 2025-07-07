@@ -25,7 +25,11 @@ public class FeignHttpClientConfig {
         HttpClientBuilder builder = HttpClientBuilder.create();
 
         // ConnectionReuseStrategy: Each Connection Close
-        builder.setConnectionReuseStrategy((response, context) -> false);
+        builder.setConnectionReuseStrategy((response, context) -> {
+            int status = response.getStatusLine().getStatusCode();
+            // status code is 200? keep-alive : connection close
+            return status == 200;
+        });
 
         // Request/Response Debugging
         builder.addInterceptorFirst((HttpRequestInterceptor) (request, context) -> {
