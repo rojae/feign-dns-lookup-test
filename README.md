@@ -11,7 +11,7 @@
 
 ---
 
-# How to Run
+# How to Run.
 
 ## 1. Set `feign-dns-local.address.com` in `/etc/hosts`
 
